@@ -353,7 +353,12 @@ require('lazy').setup({
   {
     'supermaven-inc/supermaven-nvim',
     config = function()
-      require('supermaven-nvim').setup {}
+      require('supermaven-nvim').setup {
+        keymaps = {
+          accept_word = '<Tab>',
+          accept_suggestion = '<C-j>',
+        },
+      }
     end,
   },
 
