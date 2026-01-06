@@ -38,6 +38,22 @@ External Requirements:
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
 
+### External Libraries Installation Using Brew
+
+```sh
+brew update && brew install \
+  git \
+  make \
+  unzip \
+  gcc \
+  ripgrep \
+  fd \
+  neovim \
+  node \
+  go \
+  font-hack-nerd-font
+```
+
 ### Install Kickstart
 
 > [!NOTE]
@@ -73,8 +89,16 @@ too - it's ignored in the kickstart repo to make maintenance easier, but it's
 
 <details><summary> Linux and Mac </summary>
 
+#### Using Https
+
 ```sh
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/Focus2321/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
+#### Using SSH
+
+```sh
+git clone git@github.com:Focus2321/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
